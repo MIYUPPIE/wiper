@@ -41,6 +41,16 @@ Pin assignments live as named constants at the top of
 > Polarity note: this sensor reads **higher** when wetter. If yours reads lower
 > when wet, flip the comparison in `loop()` and swap `WIPE_DELAY_MIN`/`MAX`.
 
+## In action
+
+Serial Monitor while the wiper sweeps: the arm steps `177 → 180°`, reports
+`Wiper= ON`, then reverses (`TURNING OFF`).
+
+![Serial Monitor showing the wiper sweeping](Screenshot%202023-07-02%20000013.png)
+
+> This capture is from an earlier build of the firmware, so the log wording
+> differs from the current sketch (which prints `Rain: … | Wiping at … ms/deg`).
+
 ## Repo layout
 
 ```
@@ -49,5 +59,6 @@ Pin assignments live as named constants at the top of
 ├── .gitignore
 ├── wiper_code/
 │   └── wiper_code.ino      # the wiper firmware
-└── IMG_*.jpg               # build photos
+├── IMG_*.jpg               # build photos
+└── Screenshot *.png        # Serial Monitor captures
 ```
