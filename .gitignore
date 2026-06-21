@@ -1,0 +1,24 @@
+# Arduino build output
+build/
+*.hex
+*.elf
+*.bin
+*.eep
+*.lss
+*.map
+*.o
+*.d
+*.a
+
+# Arduino IDE / sketch metadata
+.vscode/
+.theia/
+*.sublime-workspace
+*.sublime-project
+sketch.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
